@@ -120,13 +120,13 @@ nav a:hover {
 /* FIRST SECTION */
 
 .main-container {
-  width: 1540px;
+  width: 100%;
   height: 550px;
-  background-image: url("/assets/images/mainbg.png");
+  background-image: url("../images/mainbg.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   margin: 0 auto;
-  display: flex;
+  /* display: flex; */
 }
 
 .main-content-container {
@@ -153,7 +153,7 @@ h1 {
 }
 
 .img-bg {
-  background-image: url("/assets/images/secure.png");
+  background-image: url("../images/secure.png");
   width: 14px;
   height: 17px;
   display: inline-block;
@@ -416,15 +416,15 @@ time {
 }
 
 .location {
-  background-image: url('/assets/images/location.png');
+  background-image: url('../images/location.png');
 }
 
 .phone {
-  background-image: url('/assets/images/phone.png');
+  background-image: url('../images/phone.png');
 }
 
 .email-icon {
-  background-image: url('/assets/images/email.png');
+  background-image: url('../images/email.png');
 }
 
 .contacts-flex h3 {
@@ -600,7 +600,7 @@ time {
 .custom-checkbox:checked+label::before {
   border-color: none;
   background-color: #fff;
-  background-image: url("/assets/images/checkbox.png ");
+  background-image: url("../images/checkbox.png ");
 }
 
 /* стили при наведении курсора на checkbox */
@@ -659,44 +659,19 @@ footer {
   
 }
 
-.icon {
-  width: 18px;
-  height: 14px;
-  font-size: 0;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 32px; 
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 32px;
 }
 
-.icon a:last-of-type {
-  margin-right: 0;
+.info__link {
+  color: #787878;
 }
+
 
 .info a:visited {
   color: var(--lightBlack);
 }
 
-.twitter {
-  background-image: url("/assets/images/twitter.png");
-  background-size: auto;
-}
-
-.in {
-  background-image: url("/assets/images/in.png");
-}
-
-.mail {
-  background-image: url("/assets/images/mail.png");
-  position: relative;
-}
-
-.mail-triangle {
-  background-image: url('/assets/images/mail-tiangle.png');
-  position: absolute;
-  width: 18px;
-  height: 8px;
-  top: 0;
-  left: 0;
-  background-size: contain;
-}
